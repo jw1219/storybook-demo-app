@@ -1,5 +1,9 @@
 import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 
+/**
+ * Rowコンポーネントは、テーブルの構成要素である。
+ * 一つのRowは、テーブルの１行を表す。Rowを利用して、関連性のある情報をまとめる。
+ */
 export const Row = ({
   label,
   icon = null,
