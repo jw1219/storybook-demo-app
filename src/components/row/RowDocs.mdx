@@ -1,0 +1,28 @@
+import { Meta, Title, Description, Canvas, Controls } from '@storybook/blocks';
+import * as RowStories from './Row.stories';
+import {Guidelines, Dos, Donts} from '../common'
+import './styles.css'
+
+<Meta of={RowStories} />
+
+<Title />
+<Description />
+<Canvas of={RowStories.Default} sourceState='shown' />
+
+## Props
+
+<Controls />
+
+## Best Practice
+
+<Guidelines>
+  <img src='/best-practice.png' />
+  <div class='flex justify-between'>
+    <Dos>
+      ボーダーを常時表示することで、見やすくなる
+    </Dos>
+    <Donts>
+      ボーダーがないため、行数が多い場合見づらい
+    </Donts>
+  </div>
+</Guidelines>

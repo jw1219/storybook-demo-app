@@ -42,10 +42,13 @@ export default {
     label: "山田　太郎",
     hasButton: true,
     hasCheckbox: true,
+    icon: <MdPerson />
   },
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default = {
-  args: {},
+  args: {
+    icon: <MdPerson />
+  },
 };
