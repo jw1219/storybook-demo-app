@@ -6,7 +6,10 @@ import './styles.css'
 <Meta of={RowStories} />
 
 <Title />
-<Description />
+
+Rowコンポーネントは、テーブルの構成要素である。  
+一つのRowは、テーブルの１行を表す。Rowを利用して、関連性のある情報をまとめる。
+
 <Canvas of={RowStories.Default} sourceState='shown' />
 
 ## Props
@@ -16,6 +19,30 @@ import './styles.css'
 ## Best Practice
 
 <Guidelines>
+  Rowは、下記の要件を満たす必要がある：  
+
+  - テーブル要素にだけ利用される
+  - テーブルの幅いっぱいに伸びる
+  - 下部のボーターが常時表示される
+
+  <img src='/best-practice.png' />
+  <div class='flex justify-between'>
+    <Dos>
+      ボーダーを常時表示することで、見やすくなる
+    </Dos>
+    <Donts>
+      ボーダーがないため、行数が多い場合見づらい
+    </Donts>
+  </div>
+  <img src='/best-practice.png' />
+  <div class='flex justify-between'>
+    <Dos>
+      ボーダーを常時表示することで、見やすくなる
+    </Dos>
+    <Donts>
+      ボーダーがないため、行数が多い場合見づらい
+    </Donts>
+  </div>
   <img src='/best-practice.png' />
   <div class='flex justify-between'>
     <Dos>
