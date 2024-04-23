@@ -3,10 +3,10 @@ import { MdPerson } from "react-icons/md";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: "Example/Row",
+  title: "Design System/Components/Row",
   component: Row,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ["autodocs"],
+  // tags: ["autodocs"],
   parameters: {
     // componentSubtitle: "Hello"  
   },

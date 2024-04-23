@@ -1,0 +1,26 @@
+import { Meta, Title, Description, Canvas, Controls, Stories } from '@storybook/blocks';
+import * as ButtonStories from './Button.stories';
+import {Guidelines, Dos, Donts} from '../common'
+import '../common/styles.css'
+
+<Meta of={ButtonStories} />
+
+<Title />
+
+Buttonコンポーネントは、何かのアクションを行う際使われる。非活性化（disabled）となっているButtonは、アクションが行えないことをユーザーに伝える。  
+
+<Canvas of={ButtonStories.Filled} sourceState='shown' />
+
+## Props
+
+<Controls />
+
+## Stories
+
+<Stories title='' />
+
+## Best Practice
+
+<Guidelines>
+  ベストプラクティス
+</Guidelines>
