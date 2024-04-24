@@ -14,10 +14,15 @@ export default {
     )
   ],
   argTypes: {
-    classNames: {
+    variant: {
       table: {
-        disable: true,
-      },
+        disable: true
+      }
+    },
+    width: {
+      table: {
+        disable: true
+      }
     },
     size: {
       options: ['Default', 'Large'],
@@ -29,38 +34,42 @@ export default {
     }
   },
   args: {
+    variant: 'filled',
     children: "Button",
-    size: null
   },
 };
 
 export const Filled = {
   args: {
-    classNames: "text-white bg-[#2187F2] border-2 border-[#2187F2] hover:bg-[#4FA3FA] hover:border-[#4FA3FA] rounded-lg"
+    variant: 'filled',
   },
 };
 export const Outlined = {
   args: {
-    classNames: "text-[#2187F2] border-2 border-[#2187F2] hover:text-[#4FA3FA] hover:border-[#4FA3FA] rounded-lg"
+    variant: 'outlined',
   },
 };
 export const Plain = {
   args: {
-    classNames: "text-[#2187F2] hover:underline hover:underline-offset-2"
+    variant: 'plain',
   },
 };
 export const FilledCritical = {
   args: {
-    classNames: "text-white bg-[#dc3545] border-2 border-[#dc3545] hover:bg-transparent	hover:text-[#dc3545] rounded-lg"
+    variant: 'filled',
+    role: 'critical'
   },
 };
 export const FilledFullWidth = {
   args: {
-    classNames: "w-full text-white bg-[#2187F2] border-2 border-[#2187F2] hover:bg-[#4FA3FA] hover:border-[#4FA3FA] rounded-lg"
+    variant: 'filled',
+    width: 'fullWidth'
+
   },
 };
 export const OutlinedFullWidth = {
   args: {
-    classNames: "w-full text-[#2187F2] border-2 border-[#2187F2] hover:text-[#4FA3FA] hover:border-[#4FA3FA] rounded-lg"
+    variant: 'outlined',
+    width: 'fullWidth'
   },
 };

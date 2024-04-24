@@ -4,37 +4,36 @@ import {Button, Filled, Outlined, FilledFullWidth, OutlinedFullWidth} from '../.
 export default {
   title: "Design System/Patterns/ButtonGroup",
   component: ButtonGroup,
-  subcomponents: { 
-    Button,
-  },
   parameters: {
     layout: "centered",
   },
   argTypes: {
-    // classNames: {
-    //   table: {
-    //     disable: true,
-    //   },
-    // },
-  },
+    numButtons: {
+      options: [2, 3],
+      control: 'radio',
+      table: {
+        category: 'Storybook Only'
+      }
+    },
+    button1: {
+      options: ['Filled', 'Outlined', 'Plain'],
+      control: 'select',
+    }
+  }
 }
 
 export const Default = {
-  render: (args) => (
-    <ButtonGroup {...args}>
-      <Button {...Filled.args} style={{marginRight: "1rem"}}>Button</Button>
-      <Button {...Outlined.args}>Button</Button>
-    </ButtonGroup>
-  )
+  args: {
+    children: <><Button {...Filled.args} style={{marginRight: "1rem"}}>Button</Button>
+      <Button {...Outlined.args}>Button</Button></>
+  }
 }
 
 export const Narrow = {
-  render: (args) => (
-    <ButtonGroup {...args}>
-      <Button {...Filled.args} style={{marginRight: "0.5rem"}}>Button</Button>
-      <Button {...Outlined.args}>Button</Button>
-    </ButtonGroup>
-  )
+  args: {
+    children: <><Button {...Filled.args} style={{marginRight: "0.5rem"}}>Button</Button>
+      <Button {...Outlined.args}>Button</Button></>
+  }
 }
 
 export const Wide = {
